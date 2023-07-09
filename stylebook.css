@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url("background\ image.jpeg");
+  }
+  
+  header {
+    background-color: black;
+    color: #fff;
+    padding: 50px;
+    display: inline-block;
+    justify-content: space-between ;
+    vertical-align: left;
+    
+  }
+  h1{
+    text-align: center;
+  }
+
+  nav ul {
+    float:  left;
+  }
+  nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 80px;
+  }
+  nav ul li a{
+    text-transform: uppercase;
+    color: white;
+    border-radius: 3px;
+  }
+  a.active,a:hover{
+    background: blue;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width:952){
+  label.logo{
+    font-size:30px;
+    padding-left: 50px;
+
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  }
+  @media (max-width: 858px) {
+    .checkbtn{
+      display:block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: black;
+      top:80px;
+      left:-100%;
+      transition: all .5s;
+      text-align: center;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+
+    }
+    nav ul li a{
+      font-size: 20px;
+
+    }
+    a:hover,a.active{
+      background: none;
+      color: blue;
+    }
+    #check:checked ~ ul{
+     left: 0;
+    }
+  }
+  
+  .logo img {
+    width: 75px;
+    height: 60px;
+    color: black;
+    border: 3px solid white;
+    vertical-align: left;
+  }
+  
+  
+  section {
+    background-color: white;
+    color: black;
+  }
+  
+  .book-container {
+    display: inline-flex;
+    margin: 50px;
+    height: 400px;
+    width: 300px;
+  }
+  
+  .book {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .book img {
+    width: 250px;
+    height: 300px;
+    margin-bottom: 0px;
+  }
+  
+  .book h2 {
+    margin: 0px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .book p {
+    margin-top: 5px;
+    color: white;
+    background-color: black;
+    font-size: 10px;
+  }
+  footer{
+    width:100%;
+    height:100px;
+    background-color: lightpink;
+  }
+  .footer img{
+    color: black;
+    height: 75px;
+    width: 60px;
+  }
+  
